@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipping_items",
+  "info": {
+    "name": "shippingItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

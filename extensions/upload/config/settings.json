@@ -1,0 +1,8 @@
+ {
+      "provider": "cloudinary",
+      "providerOptions": {
+        "cloud_name": "cafe-app",
+        "api_key": "632569685516753",
+        "api_secret": "1l8PighSDSNLoYxsYdSQMn4YA48"
+      }
+    }
