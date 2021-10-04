@@ -24,9 +24,6 @@
     },
     "position": {
       "type": "integer"
-    },
-    "product": {
-      "model": "product"
     }
   }
 }
