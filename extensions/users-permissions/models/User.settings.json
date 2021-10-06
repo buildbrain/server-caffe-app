@@ -59,7 +59,7 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "suscipcion": {
+    "suscripcion": {
       "type": "enumeration",
       "enum": [
         "clasico",
@@ -68,6 +68,15 @@
         "tiendas"
       ],
       "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
     }
   }
 }

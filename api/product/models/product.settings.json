@@ -2,68 +2,42 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product",
-    "description": ""
+    "name": "product"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "price": {
-      "type": "float"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "categories": {
-      "collection": "category",
-      "via": "products"
-    },
-    "Custom_field": {
-      "type": "component",
-      "repeatable": true,
-      "component": "custom.custom-field"
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "draft",
-        "published"
-      ],
-      "default": "published",
-      "required": true
+      "type": "biginteger"
     },
     "desc": {
       "type": "text"
     },
     "tags": {
-      "type": "string"
+      "type": "text"
     },
     "discount": {
-      "type": "biginteger"
+      "type": "integer"
+    },
+    "disponible": {
+      "type": "boolean"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
     "main_img": {
       "model": "file",
@@ -74,19 +48,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "disponible": {
-      "type": "boolean"
     }
   }
 }
