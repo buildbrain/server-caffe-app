@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apps",
+  "info": {
+    "name": "app"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Mantenimiento": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "unique": false
+    }
+  }
+}
